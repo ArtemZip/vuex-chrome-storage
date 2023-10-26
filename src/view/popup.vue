@@ -15,6 +15,9 @@ export default {
       msg: 'popup'
     }
   },
+  async beforeCreate() {
+    await this.$store.restored
+  },
   computed: {
     ...mapGetters([
       'count'

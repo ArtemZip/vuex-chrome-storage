@@ -1,4 +1,11 @@
 import { createStore } from 'vuex'
+import VuexPersistence from 'vuex-persist'
+import { ChromeSyncStorage } from '@/store/chrome-storage'
+
+const storage = new VuexPersistence({
+  asyncStorage: true,
+  storage: ChromeSyncStorage
+})
 
 // Create a new store instance.
 export const store = createStore({
@@ -16,5 +23,6 @@ export const store = createStore({
     count (state) {
         return state.count
     }
-  }
+  },
+  plugins: [ storage.plugin ]
 })
