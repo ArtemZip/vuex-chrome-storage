@@ -1,24 +1,19 @@
 # vuex-chrome-storage
 
-## Project setup
-```
-npm install
-```
+This is a simple example of usage `Vuex` with `Chrome Storage` crafted for Medium Article. 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
+### How to use it
+
+- Build it with the next cmd
+   
+```bash
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+- Upload it Google Chrome as "Unpacked extension"
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Expected Result
+
+![result](img/vue-ext-with-chrome-storage.gif)
